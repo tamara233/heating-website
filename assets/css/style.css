@@ -1,6 +1,7 @@
 :root{
     --primary-blue: #1A00FF;
     --secondary-green: #49EA11;
+    --shadow: 0 3px 10px 0 rgba(0,0,0,0.1)
 }
 
 @font-face {
@@ -69,6 +70,7 @@ body {
     text-decoration: none;
     overflow-x: hidden;
     font-family: 'Poppins';
+    color: #000;
 }
 .pt-7 {
     padding-top: 7rem;
@@ -90,12 +92,11 @@ h2 {
     padding-top: 1rem;
 }
 h3, h4, h5 {
-    margin: 2.5rem 0;
+    margin-bottom: 4.2rem;
 }
 h3 {
     font-size: 40px;
     line-height: 60px;
-    font-weight: 800;
 }
 h4 {
     font-size: 30px;
@@ -130,7 +131,7 @@ li{
     line-height: 29px;
     color: #FFFFFF;
     font-size: 18px;
-    padding: .7em 0;
+    padding: 1em 0;
 }
 .btn-blue {  
   background-color: var(--primary-blue); 
@@ -149,9 +150,16 @@ li{
 .no-padding {
     padding: 0!important;
 }
+.no-margin {
+    margin: 0!important;
+}
 .pad-tb-6 {
    padding:  6rem 0 6rem 0;
 }
+section {
+    margin-bottom: 10rem;
+}
+
 /* Navigation */
 nav {
     padding: 1rem .2rem!important;
@@ -183,6 +191,15 @@ nav {
     font-size: 1.2em;
     padding-left: 0.7rem;
     margin-left: -0.6rem;
+}
+.form-group .form-control {
+    border-radius: 24px;
+    background-color: #FFFFFF;
+    border: none;
+    position: relative;
+}
+.form-group input , .form-group select{
+    height: 48px;
 }
 
 /* Hero section */
@@ -233,14 +250,9 @@ nav {
 #application .btn {
     line-height: calc(50% - 20px);
 }
-.form-group .form-control {
-    height: 48px;
+#application .form-group .form-control {
     width: 255px;
-    border-radius: 24px;
-    background-color: #FFFFFF;
     box-shadow: 0 5px 10px 0 rgba(0,0,0,0.1);
-    border: none;
-    position: relative;
 }
 .input-append-text {
     display: -ms-flexbox;
@@ -311,6 +323,15 @@ select {
   }
 
 /* Offers section */
+.offres-bg {
+    background: url(../img/tools.png);
+    background-size: cover;
+    background-position: center;
+    padding-bottom: 20rem;
+}
+.offers h1 {
+    margin-bottom: 3rem;
+}
 .card {
     margin: 2.5em 2em;
     padding: 10px 10px;
@@ -340,14 +361,218 @@ select {
     left: calc(50% - 82px);
 }
 
+/* Activities section */
+.activity .oval-blue {
+    margin-left: -90%;
+}
+.activity h2, .activity .card{
+    text-align: left;
+}
+.activity img:first-child {
+    position: absolute;
+    left: 20%;
+    bottom: 6%;
+}
+.activity img:nth-child(2) {
+    position: absolute;
+    left: 43%;
+    bottom: 33%;
+}
+.activity h6 {
+    font-weight: 600;
+}
+.activity .card {
+    padding: 0 1.5rem 2rem 1rem;;
+    margin: 1.7rem 0;
+    box-shadow: var(--shadow);
+}
+.activity .card-text {
+    font-size: 18px;
+}
+.grid {
+    display: grid;
+    
+}
+.activity .grid {
+    grid-template-columns: auto auto;
+    grid-template-rows: 4rem 2rem;
+    grid-column-gap: .8rem;
+}
+.activity .card-text, .activity h6 {
+    grid-column-start: 2;
+    align-self: center;
+}
+.check-circle {
+    grid-row: 1 / 3;
+    align-self: start;
+    color: var(--secondary-green);
+    font-size: 4.5em;
+}
+.activity .card-text {
+    margin-bottom: 0;
+}
+.activity a {
+    font-size: 18px;
+    width: 260px;
+}
 
+/* Process section */
+.phase-num {
+    font-size: 50px;
+    color: #FFFFFF;
+    font-weight: 600;
+    position: absolute;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    line-height: 8rem;
+}
+.phase img {
+    position: relative;
+}
+.phase h6 {
+    font-size: 21px;
+    font-weight: bold;
+    line-height: 31px;
+    padding-bottom: 1rem;
+    margin-top: -1.5rem;
+    min-height: 5rem;
+    padding: 0 2rem;
+}
+.phase p {
+    font-size: 16px;
+    font-weight: 300;
+    padding: 0 .8rem;
+}
+.phase .fa-chevron-right {
+    color: var(--secondary-green);
+    font-size: 50px;
+    line-height: 7rem;
+    left: -2%;
+    top: 2%;
+    position: absolute;
+}
+
+/* Reviews */
+.oval-red {
+    height: 50rem;
+    width: 50rem;
+    background-color: #F04450;
+    border-radius: 50%;
+    float: left;
+    margin-left: -43%;
+    position: relative;
+    position: relative;
+    z-index: -1;
+}
+.oval-red img {
+    position: absolute;
+    z-index: 1;
+    left: 30%;
+    bottom: 10%;
+    height: 35%;
+}
+.reviews {
+    padding: 3rem;
+}
+.review-img {
+    width: 30%;
+}
+.blockquote {
+    box-shadow: var(--shadow);
+    padding: 1.5rem;
+    min-height: 17rem;;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+}
+.blockquote p {
+    font-size: 16px;
+}
+.blockquote img {
+    float: left;
+    height: 4rem;
+}
+blockquote footer {
+    padding-top: 1.5rem;
+}
+.reviews .col-sm-6:last-child p {
+    margin-top: 10%;
+    font-size: 20px;
+    text-align: center;
+}
+
+.reviews .col-sm-6:last-child a {
+    font-size: 13px;
+}
 .blockquote-footer::before {
     content: "";
 }
-.circle-phase {
-    height: 50px;
-    width: 50px;
+.content-over {
+    width: 70%;
+    margin-left: auto;
+}
+
+/* Contacts Section */
+.oval-black {
+    height: 35rem;
+    width: 35rem;
+    background-color: #3B3C3C;
     border-radius: 50%;
-    background-color: var(--secondary-green);
+    left: -26%;
+    position: absolute;
+    right: 17%;
+}
+.contact-bg {
+    width: 10%;
+    float: left;
+    z-index: -1;
+}
+.contact {
+    margin-top: 10%;
+    width: 80%;
+    background: #F5F5F5;
+    box-shadow: 0 10px 10px 0 rgba(0,0,0,0.1);
+    padding: 3rem 0;
+}
+.contact-bg-bottom {
+    width: 10%;
+}
+address p, address a {
+    font-size: 20px; 
+    font-weight: 500;
+    line-height: 28px;
+    color: #000000;
+    display: block;
+    margin-bottom: 2rem;
+}
+address p img:first-child {
+    float: left;
+}
+ cite {
+    font-size: 12px;
+
+}
+.contact .input-group-append {
+    margin-left: 87%;
+    top: 122px;
+}
+.contact select, .contact textarea::placeholder {
+    padding-top: 5px;
+    padding-left: 10px;
+    font-size: 16px!important;
+    font-weight: 300;
+}
+.contact select {
+    padding-left: 20px;
+}
+
+.contact form button {
+    margin-top: 1.5em;
+}
+.contact-bg-bottom .oval-black {
+    background: red;
+    margin-top: 25%;
+    left: 82%;
+    overflow-x: hidden;
 }
 
