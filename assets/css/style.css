@@ -235,9 +235,8 @@ nav {
     height: 40rem;
     width: 40rem;
     background-color: var(--secondary-green);
-    border-radius: 50%;
+    clip-path: circle(48.9% at 10% 50%);
     float: left;
-    margin-left: -18%;
     opacity: 0.9;
     margin-top: -4%;
 }
@@ -248,11 +247,25 @@ nav {
     min-height: 150px;
 }
 #application .btn {
+    width: 12%;
     line-height: calc(50% - 20px);
 }
 #application .form-group .form-control {
-    width: 255px;
     box-shadow: 0 5px 10px 0 rgba(0,0,0,0.1);
+    width: 100%;
+}
+.form-inline .form-group {
+    margin: .5rem;
+    width: 215px;
+}
+.form-inline .form-group:nth-child(4){
+    width: 21%;
+}
+.form-inline .form-group:nth-child(4) .input-group-append {
+    margin-left: 190px;
+} 
+.form-inline .form-group:nth-child(3) .input-group-append {
+    margin-left: 165px;
 }
 .input-append-text {
     display: -ms-flexbox;
@@ -262,12 +275,11 @@ nav {
     white-space: nowrap;
 }
 .input-group-append {
-    margin-left: -16%;
     padding-left: 0.6rem;
     border-left: 1px solid rgba(0,0,0,0.42);
     line-height: 14px;
     position: absolute;
-    margin-left: 209px;
+    margin-left: 175px;
 }
 #application button {
     height: 48px;
@@ -289,27 +301,26 @@ select {
 
 /* About section */
 .oval-blue {
-    height: 58rem;
-    width: 55rem;
+    height: 80rem;
     background-color: var(--primary-blue);
-    border-radius: 50%;
-    float: left;
-    margin-left: -30%;
-    opacity: 0.9;
+    clip-path: circle(48.9% at 3% 50%);
     position: relative;
+    margin-top: -9rem;
 }
-.oval-blue img {
+.img-over {
     position: absolute;
-    margin: 27rem 0 0 23rem;
+    margin: -40rem 0 0 1rem;
+    height: 19rem;
 }
 .grey-oval {
-    height: 3em;
-    /* width: auto; */
-    background-color: rgba(44,46,48,0.15);
-    z-index: 117;
-    border-radius: 50%;
-    margin-top: 87%;
-    margin-right: -9%;
+    height: 30em;
+    position: absolute;
+    background: rgba(44,46,48,0.15);
+    transform: rotate(90deg);
+    clip-path: ellipse(2% 50% at 11% 50%);
+    left: -21%;
+    position: absolute;
+    width: 100%;
 }
 .num {
     color: var(--secondary-green);
@@ -321,6 +332,13 @@ select {
     font-weight: 500;
     line-height: 30px;
   }
+.w-45 {
+    width: 45%;
+}
+.w-55 {
+    width: 55%;
+    margin-left: 3%;
+}
 
 /* Offers section */
 .offres-bg {
@@ -363,21 +381,24 @@ select {
 
 /* Activities section */
 .activity .oval-blue {
-    margin-left: -90%;
+    clip-path: circle(58.9% at 19% 50%);
+    height: 100%;
+    margin-top: 2rem;
 }
 .activity h2, .activity .card{
     text-align: left;
 }
-.activity img:first-child {
-    position: absolute;
-    left: 20%;
-    bottom: 6%;
-}
+
 .activity img:nth-child(2) {
     position: absolute;
-    left: 43%;
-    bottom: 33%;
+    margin: -34rem 0 0 5rem;
 }
+.activity img:nth-child(3) {
+    position: absolute;
+    margin: -41rem 0 0 18rem;
+    height: 20rem;
+}
+
 .activity h6 {
     font-weight: 600;
 }
@@ -458,25 +479,21 @@ select {
     height: 50rem;
     width: 50rem;
     background-color: #F04450;
-    border-radius: 50%;
+    clip-path: circle(38.9% at 3% 39%);
     float: left;
-    margin-left: -43%;
-    position: relative;
     position: relative;
     z-index: -1;
+    margin-top: -2rem;
 }
 .oval-red img {
     position: absolute;
     z-index: 1;
-    left: 30%;
-    bottom: 10%;
-    height: 35%;
-}
-.reviews {
-    padding: 3rem;
+    left: 3rem;
+    bottom: 16rem;
+    height: 11rem;
 }
 .review-img {
-    width: 30%;
+    width: 25%;
 }
 .blockquote {
     box-shadow: var(--shadow);
@@ -508,37 +525,39 @@ blockquote footer {
     content: "";
 }
 .content-over {
-    width: 70%;
+    width: 75%;
     margin-left: auto;
 }
 
 /* Contacts Section */
 .oval-black {
-    height: 35rem;
-    width: 35rem;
+    height: 29rem;
     background-color: #3B3C3C;
-    border-radius: 50%;
-    left: -26%;
-    position: absolute;
-    right: 17%;
+    clip-path: circle(48.9% at -8% 50%)
 }
 .contact-bg {
-    width: 10%;
-    float: left;
     z-index: -1;
+    width: 10%;
 }
 .contact {
     margin-top: 10%;
-    width: 80%;
     background: #F5F5F5;
     box-shadow: 0 10px 10px 0 rgba(0,0,0,0.1);
     padding: 3rem 0;
+    width: 80%;
 }
 .contact-bg-bottom {
-    width: 10%;
+    align-self: flex-end;
+}
+.contact-bg-bottom .oval-black {
+    margin-bottom: -108%;
+    transform: rotate(180deg);
+}
+.contact img {
+    width: 20%;
 }
 address p, address a {
-    font-size: 20px; 
+    font-size: 15px; 
     font-weight: 500;
     line-height: 28px;
     color: #000000;
@@ -553,7 +572,7 @@ address p img:first-child {
 
 }
 .contact .input-group-append {
-    margin-left: 87%;
+    margin-left: 84%;
     top: 122px;
 }
 .contact select, .contact textarea::placeholder {
@@ -569,10 +588,46 @@ address p img:first-child {
 .contact form button {
     margin-top: 1.5em;
 }
-.contact-bg-bottom .oval-black {
-    background: red;
-    margin-top: 25%;
-    left: 82%;
-    overflow-x: hidden;
+.panel-title {
+    border-radius: 5px;
+    background-color: #FFFFFF;
+    padding: 1.4rem
+}
+.faq h4 {
+    margin-bottom: .8rem;
+}
+.panel-body {
+    color: rgba(44,46,48,0.9);
+    font-size: 16px;
+    padding: 1.5rem 1.5rem;
+    border-top: 1px solid #979797;
+    width: 87%;
+    margin: auto;
+}
+.panel-default {
+    margin-bottom: 0.8rem;
+}
+.faq a{
+    color: rgba(44,46,48,0.9);
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 0;
+    line-height: 25px;
+}
+.faq-shadow {
+    box-shadow: 0 2px 4px 0 #B0AAAA;
 }
 
+.faq a:visited , .faq a:focus, .faq a:hover {
+    text-decoration: none;
+    cursor: default;
+}
+.panel-title:hover {
+    box-shadow: 0 3px 10px 0 #B0AAAA
+}
+.panel-title:active {
+    box-shadow: none;
+}
+.no-hover {
+    box-shadow: none!important;
+}

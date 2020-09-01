@@ -11,6 +11,7 @@
     <title>Document</title>
 </head>
 <body>  
+    <div class="container">
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-light">
         <a class="navbar-brand" href="#">
@@ -48,11 +49,11 @@
       </nav>
 
     <!-- Hero section -->
-    <section class="jumbotron jumbotron-fluid">
+    <section class="jumbotron d-flex">
         <div class="oval-green d-none d-lg-block"></div>
         <div class="container">
             <div class="row justify-content-md-center">
-                <div class="col-sm-12 col-md-7">
+                <div class="col-sm-12 col-md-10 col-lg-9">
                     <h2>Des travaux d’économies d’énergie <span class="text-extrabold">100% financés pour votre logement</span></h2>
                     <div class="d-flex">
                         <ul class="list-unstyled mx-auto justify-content-center my-4 hero-desc">
@@ -68,12 +69,12 @@
     </section>
 
     <!-- Form application-->
-    <section class="container-fluid" id="application" >
+    <section id="application" >
         <div class="row justify-content-md-center">
             <div class="col-sm-12 col-md-12">            
-                <h6 class="pt-4 d-block pb-3 ml-3">Simuler ma performance énergétique</h6>
-                <form class="form-inline">
-                    <div class="form-group mx-sm-3 mb-2">
+                <h6 class="pt-4 d-block pb-3 pl-2 mx-4">Simuler ma performance énergétique</h6>
+                <form class="form-inline mx-4">
+                    <div class="form-group">
                         <select class="form-control" id="exampleFormControlSelect1">
                         <option>Type de bâtiment</option>
                         <option>Type de bâtiment</option>
@@ -85,36 +86,40 @@
                             <span class="input-append-text caret"><</span>
                         </div>
                     </div>
-                    <div class="form-group mx-sm-3 mb-2">
+                    <div class="form-group">
                         <input type="text" class="form-control" id="postCode" placeholder="Code Postal">
                     </div>
-                    <div class="form-group mx-sm-3 mb-2">
+                    <div class="form-group">
                         <input type="text" class="form-control" id="postCode" placeholder="Surface totale">
                         <div class="input-group-append">
                             <span class="input-append-text">m2</span>
                         </div>
                     </div>
-                    <div class="form-group mx-sm-3 mb-2">
+                    <div class="form-group">
                         <input type="text" class="form-control" id="postCode" placeholder="Facture annuelle HT">
                         <div class="input-group-append">
                             <span class="input-append-text">$</span>
                         </div>
                     </div>
-                    <button type="submit" class="btn btn-blue mb-2">Simuler</button>
+                    <button type="submit" class="btn btn-blue">Simuler</button>
                 </form>
             </div>
         </div>
     </section>
 
     <!-- About section -->
-    <section class="container-fluid">
+    <section id="about">
         <h1>La rénovation énergetique <br> <span class="text-extrabold">enfin accessible à tous </span></h1>
-        <div class="oval-blue d-none d-lg-block">
-            <img src="./assets/img/Illustration.svg" alt="">
+        <div class="d-flex">
+        <div class="w-45">
+            <div class="oval-blue d-none d-lg-block">
+            </div>
+            
+            <img class="img-over" src="./assets/img/Illustration.svg" alt="">
             <div class="grey-oval"></div>
         </div>
-        <div class="row justify-content-md-center">
-            <div class="col-sm-12 col-md-9">
+        <div class="row justify-content-md-center w-55">
+            <div class="col-sm-12">
                 <h3 class="text-left text-extrabold">Qui somme nous</h3>
                 <p class="lead">AWB Energie propose des <span class="text-semibold">solutions clés en main</span> aux propriétaires et copropriétaires afin d’isoler leurs logements.<br/>
                     Les opérations engagées sont <span class="text-semibold">entièrement financées</span>  par le dispositif des CEE mise en place par L’ADEME.<br/>
@@ -158,6 +163,7 @@
                 </div>
             </div>
         </div>
+    </div>
     </section>
 
     <!-- Offers section -->
@@ -187,17 +193,14 @@
     </section>
 
     <!-- Activity section -->
-    <section class="container-fluid activity">
-        <div class="row">
-            <div class="d-none d-md-block col-md-4 col-lg-5">
-                <div class="oval-blue d-none d-lg-block">
-                    <img src="./assets/img/employee.svg" alt="">
-                    <img src="./assets/img/list.svg" alt="">
-                </div>
+    <section class="activity"> 
+        <div class="d-flex">    
+            <div class="d-none d-md-block w-45">
+                <div class="d-flex align-self-start oval-blue d-none d-lg-block"></div>
+                <img src="./assets/img/employee.svg" alt="">
+                <img src="./assets/img/list.svg" alt="">             
             </div>
-            <div class="col-sm-12 col-md-8 col-lg-7">
-                <div class="container">
-                    <div class="row">
+                    <div class="row w-55">
                         <div class="col-sm-12 col-md-10">
                             <h3>AWB Énergie <span class="text-extrabold">s’engage</span></h3>
                             <div class="card mx-0 grid">
@@ -221,16 +224,13 @@
                                 <p class="card-text">Notre équipe spécialisés vous accompagne tout au long de vos travaux</p>
                             </div>
                         </div>                        
-                    </div>
-                </div>
-                
-            </div>
-        </div>
+                    </div>                
+                </div>   
         <a class="btn btn-green mt-4 mx-auto d-block text-extrabold" href="#" >Vérifier mon éligibilité</a>
     </section>
 
     <!-- Process section -->
-    <section class="container">
+    <section class="process">
         <h3 class="text-center">Un processus<span class="text-extrabold"> simple</span></h3>
         <div class="row text-center phase">
             <div class="col-sm-6 col-md-3 ">
@@ -265,7 +265,7 @@
     </section>
 
     <!-- Reviews section -->
-    <section class="container-fluid">
+    <section class="reviews">
         <h3 class="text-center">Nos clients <span class="text-extrabold">témoignent</span></h3>
         <div class="row">
         <div class="d-none d-md-block review-img">
@@ -353,13 +353,13 @@
     </section>
 
     <!-- Contact form -->
-    <section class="container-fluid">
-        <div class="row">
+    <section class="contact-form  d-flex justify-content-center">
         <div class="d-none d-md-block contact-bg">
             <div class="oval-black"></div>
         </div>
+        
         <div class="row contact justify-content-center">
-            <div class="col-sm-11 col-md-11 col-lg-11">
+            <div class="col-sm-11 col-md-12 px-4">
                 <div class="row">
                     <div class="col-sm-10 col-md-5">
                         <h4 class="text-bold">Nous contacter</h4>
@@ -411,16 +411,110 @@
         <div class="d-none d-md-block contact-bg contact-bg-bottom">
             <div class="oval-black"></div>
         </div>
-    </div>
+    
     </section>
 
     <!-- FAQ section -->
+    <section>
+        <h3 class="text-center text-bold">Questions fréquentes</h3>
+        <div class="row faq justify-content-center"> 
+
+            <div class="col-sm-12 col-md-6">      
+                <div class="panel-group">
+                    <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title faq-shadow">
+                        <a data-toggle="collapse" href="#collapse1">Qu’est-ce que les dispositifs CEE ?</a>
+                        </h4>
+                    </div>
+                    <div id="collapse1" class="panel-collapse collapse">
+                        <div class="panel-body">Le dispositif des certificats d'économie d'énergie (CEE) est un mécanisme instauré en 2006 par l'Etat, qui oblige les fournisseurs d'énergie (appelés « Obligés ») à aider ceux qui en consomment (particuliers et entreprises) à faire des économies d'énergie.</div>
+                    </div>
+                    </div>
+                </div>  
+            </div> 
+            <div class="col-sm-12 col-md-6">      
+                <div class="panel-group">
+                    <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title faq-shadow">
+                        <a data-toggle="collapse" href="#collapse2">Qu’est-ce que les dispositifs CEE ?</a>
+                        </h4>
+                    </div>
+                    <div id="collapse2" class="panel-collapse collapse">
+                        <div class="panel-body">Le dispositif des certificats d'économie d'énergie (CEE) est un mécanisme instauré en 2006 par l'Etat, qui oblige les fournisseurs d'énergie (appelés « Obligés ») à aider ceux qui en consomment (particuliers et entreprises) à faire des économies d'énergie.</div>
+                    </div>
+                    </div>
+                </div>  
+                </div>               
+            <div class="col-sm-12 col-md-6">      
+                <div class="panel-group">
+                    <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title faq-shadow">
+                        <a data-toggle="collapse" href="#collapse3">Qu’est-ce que les dispositifs CEE ?</a>
+                        </h4>
+                    </div>
+                    <div id="collapse3" class="panel-collapse collapse">
+                        <div class="panel-body">Le dispositif des certificats d'économie d'énergie (CEE) est un mécanisme instauré en 2006 par l'Etat, qui oblige les fournisseurs d'énergie (appelés « Obligés ») à aider ceux qui en consomment (particuliers et entreprises) à faire des économies d'énergie.</div>
+                    </div>
+                    </div>
+                </div>  
+            </div>
+            <div class="col-sm-12 col-md-6">      
+                <div class="panel-group">
+                    <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title faq-shadow">
+                        <a data-toggle="collapse" href="#collapse4">Qu’est-ce que les dispositifs CEE ?</a>
+                        </h4>
+                    </div>
+                    <div id="collapse4" class="panel-collapse collapse">
+                        <div class="panel-body">Le dispositif des certificats d'économie d'énergie (CEE) est un mécanisme instauré en 2006 par l'Etat, qui oblige les fournisseurs d'énergie (appelés « Obligés ») à aider ceux qui en consomment (particuliers et entreprises) à faire des économies d'énergie.</div>
+                    </div>
+                    </div>
+                </div>  
+                </div>
+            <div class="col-sm-12 col-md-6">      
+                <div class="panel-group">
+                    <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title faq-shadow">
+                        <a data-toggle="collapse" href="#collapse5">Qu’est-ce que les dispositifs CEE ?</a>
+                        </h4>
+                    </div>
+                    <div id="collapse5" class="panel-collapse collapse">
+                        <div class="panel-body">Le dispositif des certificats d'économie d'énergie (CEE) est un mécanisme instauré en 2006 par l'Etat, qui oblige les fournisseurs d'énergie (appelés « Obligés ») à aider ceux qui en consomment (particuliers et entreprises) à faire des économies d'énergie.</div>
+                    </div>
+                    </div>
+                </div>  
+            </div>
+            <div class="col-sm-12 col-md-6">      
+            <div class="panel-group">
+                <div class="panel-group">
+                    <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title faq-shadow">
+                        <a data-toggle="collapse" href="#collapse6">Qu’est-ce que les dispositifs CEE ?</a>
+                        </h4>
+                    </div>
+                    <div id="collapse6" class="panel-collapse collapse">
+                        <div class="panel-body">Le dispositif des certificats d'économie d'énergie (CEE) est un mécanisme instauré en 2006 par l'Etat, qui oblige les fournisseurs d'énergie (appelés « Obligés ») à aider ceux qui en consomment (particuliers et entreprises) à faire des économies d'énergie.</div>
+                    </div>
+                    </div>
+                </div>  
+            </div>                                      
+        </div>
+    </section>
+
     
     <!-- Footer -->
+</div>
     
     <!-- Javascripts -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="./assets/js/custom.js"></script>
 </body>
 </html
