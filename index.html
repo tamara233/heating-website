@@ -11,7 +11,7 @@
     <title>Document</title>
 </head>
 <body>  
-    <div class="container">
+    <div class="container-fluid">
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-light">
         <a class="navbar-brand" href="#">
@@ -26,22 +26,22 @@
               <a class="nav-link" href="#">Accueil<span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Qui sommes-nous</a>
+              <a class="nav-link" href="#section3">Qui sommes-nous</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Offres travaux</a>
+              <a class="nav-link" href="#section4">Offres travaux</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Nos engagements</a>
+                <a class="nav-link" href="#section5">Nos engagements</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Notre processus</a>
+                <a class="nav-link" href="#section6">Notre processus</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Contact</a>
+                <a class="nav-link" href="#section8">Contact</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">FAQ</a>
+                <a class="nav-link" href="#section9">FAQ</a>
             </li>
             <a class="btn btn-blue" href="tel:0183623939" > <i class="fas fa-phone"></i> 01 83 52 39 39</a>
           </ul>
@@ -49,7 +49,7 @@
       </nav>
 
     <!-- Hero section -->
-    <section class="jumbotron d-flex">
+    <section class="jumbotron d-flex" id="section1">
         <div class="oval-green d-none d-lg-block"></div>
         <div class="container">
             <div class="row justify-content-md-center">
@@ -69,7 +69,7 @@
     </section>
 
     <!-- Form application-->
-    <section id="application" >
+    <section id="application" id="section2">
         <div class="row justify-content-md-center">
             <div class="col-sm-12 col-md-12">            
                 <h6 class="pt-4 d-block pb-3 pl-2 mx-4">Simuler ma performance énergétique</h6>
@@ -108,17 +108,17 @@
     </section>
 
     <!-- About section -->
-    <section id="about">
+    <section class="about" id="section3">
         <h1>La rénovation énergetique <br> <span class="text-extrabold">enfin accessible à tous </span></h1>
         <div class="d-flex">
-        <div class="w-45">
-            <div class="oval-blue d-none d-lg-block">
+        <div class="d-none d-lg-block w-45">
+            <div class="oval-blue">
             </div>
             
             <img class="img-over" src="./assets/img/Illustration.svg" alt="">
             <div class="grey-oval"></div>
         </div>
-        <div class="row justify-content-md-center w-55">
+        <div class="row justify-content-md-center w-text">
             <div class="col-sm-12">
                 <h3 class="text-left text-extrabold">Qui somme nous</h3>
                 <p class="lead">AWB Energie propose des <span class="text-semibold">solutions clés en main</span> aux propriétaires et copropriétaires afin d’isoler leurs logements.<br/>
@@ -129,19 +129,19 @@
                 <h5 class="text-bold">AWB Énergie en quelques chiffres</h5>
                 <div class="container">
                     <div class="row">
-                        <div class="col-sm-6 col-md-3 no-padding">
+                        <div class="col-sm-6 col-md-4 col-lg-3 no-padding">
                             <span class="num">30</span>
                             <p class="desc">Immeubles rénovés</p>
                         </div>
-                        <div class="col-sm-6 col-md-3">
+                        <div class="col-sm-6 col-md-4 col-lg-3">
                             <span class="num">50</span>
                             <p class="desc">Chantier réalisés</p>
                         </div>
-                        <div class="col-sm-6 col-md-3">
+                        <div class="col-sm-6 col-md-4 col-lg-3">
                             <span class="num">20</span>
                             <p class="desc">Partenaires Éco</p>
                         </div>
-                        <div class="col-sm-6 col-md-3">
+                        <div class="col-sm-6 col-md-4 col-lg-3">
                             <span class="num">100</span>
                             <p class="desc">Clients satisfaits</p>
                         </div>
@@ -150,7 +150,7 @@
                 <h5 class="text-bold">Ensemble, nous luttons pour l’environnement</h5>
                 <div class="container logos">
                     <div class="row d-flex align-items-center">
-                        <div class="col-sm-3 d-flex justify-content-left">
+                        <div class="col-sm-3 d-flex justify-content-left pl-0 mr-3">
                             <img src="./assets/img/logo1.svg" alt="">
                         </div>
                         <div class="col-sm-3 d-flex justify-content-center">
@@ -167,41 +167,41 @@
     </section>
 
     <!-- Offers section -->
-    <section class="container-fluid offers offres-bg">
+    <section class="offers offres-bg" id="section4">
         <h1 class="text-center">Nos Offres travaux <br><span class="text-extrabold"> 100% finances</span></h1>
-        <div class="row justify-content-md-center ">
-            <div class="card col-sm-12 col-md-3">
+        <div class="row justify-content-lg-center ">
+            <div class="card col-sm-12 col-md-5 col-lg-3">
                 <h4 class="card-title">Calorifugeage</h4>
                 <p class="card-text">L’isolation des conduits d’eau chaude.</p>
                 <p class="card-text">Jusqu’à -30% sur votre facture d’énergie</p>
                 <a class="btn btn-border mt-4 mx-auto d-block" href="#" >En savoir +</a>
             </div>
-            <div class="card col-sm-12 col-md-3">
+            <div class="card col-sm-12 col-md-5 col-lg-3">
                 <h4 class="card-title">Isolation sous plancher bas</h4>
                 <p class="card-text">L’isolation thermique des planchers bas</p>
                 <p class="card-text">Jusqu’à -30% sur votre facture d’énergie</p>
                 <a class="btn btn-border mt-4 mx-auto d-block" href="#" >En savoir +</a>
             </div>
-            <div class="card col-sm-12 col-md-3">
+            <div class="card col-sm-12 col-md-5 col-lg-3">
                 <h4 class="card-title">Isolation des points singuliers</h4>
                 <p class="card-text">L’isolation des vannes de robinetterie</p>
                 <p class="card-text">Jusqu’à -30% sur votre facture d’énergie</p>
                 <a class="btn btn-border mt-4 mx-auto d-block" href="#" >En savoir +</a>
-            </div>
-            <a class="btn col-sm-4 col-md-2 btn-blue mt-5 mx-auto d-block" href="#" >Toutes nos offres</a>
+            </div>            
         </div>
+        <a class="btn col-sm-4 col-md-2 btn-blue mt-5 mx-auto d-block" href="#" >Toutes nos offres</a>
     </section>
 
     <!-- Activity section -->
-    <section class="activity"> 
+    <section class="activity" id="section5"> 
         <div class="d-flex">    
-            <div class="d-none d-md-block w-45">
+            <div class="d-none d-lg-block w-45">
                 <div class="d-flex align-self-start oval-blue d-none d-lg-block"></div>
                 <img src="./assets/img/employee.svg" alt="">
                 <img src="./assets/img/list.svg" alt="">             
             </div>
-                    <div class="row w-55">
-                        <div class="col-sm-12 col-md-10">
+                    <div class="row w-text">
+                        <div class="col-sm-12 col-md-12 col-lg-10">
                             <h3>AWB Énergie <span class="text-extrabold">s’engage</span></h3>
                             <div class="card mx-0 grid">
                                 <span class="check-circle"><i class="fas fa-check-circle"></i></span>
@@ -230,30 +230,30 @@
     </section>
 
     <!-- Process section -->
-    <section class="process">
+    <section class="process" id="section6">
         <h3 class="text-center">Un processus<span class="text-extrabold"> simple</span></h3>
         <div class="row text-center phase">
-            <div class="col-sm-6 col-md-3 ">
+            <div class="col-sm-6 col-md-6 col-lg-3 ">
                 <div class="phase-num">1</div>
                 <img src="./assets/img/oval-padding.svg" alt="">
                 <h6>Vérification de l’éligibilité</h6>
                 <p>Un technico-commercial se déplace et vérifie l’éligibilité du bâtiment. Il fait ensuite un relevé de la surface à rénover.</p>
             </div>
-            <div class="col-sm-6 col-md-3">
+            <div class="col-sm-6 col-md-6 col-lg-3">
                 <div class="phase-num">2</div>
                 <i class="fas fa-chevron-right"></i>
                 <img src="./assets/img/oval-padding.svg" alt="">
                 <h6>Execution des travaux</h6>
                 <p>Un artisan selectionné par nos soins exécute les travaux selon le cahier des charges ministériel.</p>
             </div>
-            <div class="col-sm-6 col-md-3">
+            <div class="col-sm-6 col-md-6 col-lg-3">
                 <div class="phase-num">3</div>
                 <i class="fas fa-chevron-right"></i>
                 <img src="./assets/img/oval-padding.svg" alt="">
                 <h6>Certification du chantier</h6>
                 <p>Un technicien mandaté par un organisme tiers accrédité se déplace sur site afin decertifier le chantier.</p>
             </div>
-            <div class="col-sm-6 col-md-3">
+            <div class="col-sm-6 col-md-6 col-lg-3">
                 <div class="phase-num">4</div>
                 <i class="fas fa-chevron-right"></i>
                 <img src="./assets/img/oval-padding.svg" alt="">
@@ -265,7 +265,7 @@
     </section>
 
     <!-- Reviews section -->
-    <section class="reviews">
+    <section class="reviews" id="section7">
         <h3 class="text-center">Nos clients <span class="text-extrabold">témoignent</span></h3>
         <div class="row">
         <div class="d-none d-md-block review-img">
@@ -275,12 +275,12 @@
         </div>
         <div class="content-over">
         <div class="row reviews">    
-            <div class="col-sm-6 col-md-4">
+            <div class="col-sm-6 col-lg-4">
                 <blockquote class="blockquote">
                     <p class="mb-0">« Une équipe pro qui nous a accompagnée tout au long des travaux.
                         <br/>Cela nous a permis de valoriser notre immeuble.»</p>
                     <footer class="blockquote-footer">
-                        <img src="./assets/img/oval-padding.svg" alt="">
+                        <img src="./assets/img/profile.png" alt="">
                         <div>
                             <p>Catherine Dupont</p> 
                             <cite title="Gestionnaire, Citya">Gestionnaire, Citya</cite>
@@ -288,12 +288,12 @@
                         </footer>
                   </blockquote>  
             </div>
-            <div class="col-sm-6 col-md-4">
+            <div class="col-sm-6 col-lg-4">
                 <blockquote class="blockquote">
                     <p class="mb-0">« Une équipe pro qui nous a accompagnée tout au long des travaux.
                         <br/>Cela nous a permis de valoriser notre immeuble.»</p>
                     <footer class="blockquote-footer">
-                        <img src="./assets/img/oval-padding.svg" alt="">
+                        <img src="./assets/img/profile.png" alt="">
                         <div>
                             <p>Catherine Dupont</p> 
                             <cite title="Gestionnaire, Citya">Gestionnaire, Citya</cite>
@@ -301,12 +301,12 @@
                         </footer>
                   </blockquote>  
             </div>
-            <div class="col-sm-6 col-md-4">
+            <div class="col-sm-6 col-lg-4">
                 <blockquote class="blockquote">
                     <p class="mb-0">« Une équipe pro qui nous a accompagnée tout au long des travaux.
                         <br/>Cela nous a permis de valoriser notre immeuble.»</p>
                     <footer class="blockquote-footer">
-                        <img src="./assets/img/oval-padding.svg" alt="">
+                        <img src="./assets/img/profile.png" alt="">
                         <div>
                             <p>Catherine Dupont</p> 
                             <cite title="Gestionnaire, Citya">Gestionnaire, Citya</cite>
@@ -315,12 +315,12 @@
                   </blockquote>  
             </div>
           
-            <div class="col-sm-6 col-md-4">
+            <div class="col-sm-6 col-lg-4">
                 <blockquote class="blockquote">
                     <p class="mb-0">« Une équipe pro qui nous a accompagnée tout au long des travaux.
                         <br/>Cela nous a permis de valoriser notre immeuble.»</p>
                     <footer class="blockquote-footer">
-                        <img src="./assets/img/oval-padding.svg" alt="">
+                        <img src="./assets/img/profile.png" alt="">
                         <div>
                             <p>Catherine Dupont</p> 
                             <cite title="Gestionnaire, Citya">Gestionnaire, Citya</cite>
@@ -328,12 +328,12 @@
                         </footer>
                   </blockquote>    
             </div>
-            <div class="col-sm-6 col-md-4">
+            <div class="col-sm-6 col-lg-4">
                 <blockquote class="blockquote">
                     <p class="mb-0">« Une équipe pro qui nous a accompagnée tout au long des travaux.
                         <br/>Cela nous a permis de valoriser notre immeuble.»</p>
                     <footer class="blockquote-footer">
-                        <img src="./assets/img/oval-padding.svg" alt="">
+                        <img src="./assets/img/profile.png" alt="">
                         <div>
                             <p>Catherine Dupont</p> 
                             <cite title="Gestionnaire, Citya">Gestionnaire, Citya</cite>
@@ -341,7 +341,7 @@
                         </footer>
                   </blockquote>  
             </div>
-            <div class="col-sm-6 col-md-4">
+            <div class="col-sm-6 col-lg-4">
                 <div class="blockquote">              
                     <p class="">Profitez dès maintenant de nos <span class="text-extrabold"> offres travaux 100% financés</span></p>
                     <a class="btn btn-green mx-auto d-block" href="#" >Vérifier mon éligibilité</a>
@@ -353,15 +353,15 @@
     </section>
 
     <!-- Contact form -->
-    <section class="contact-form  d-flex justify-content-center">
-        <div class="d-none d-md-block contact-bg">
+    <section class="contact-form  d-lg-flex justify-content-lg-between" id="section8">
+        <div class="d-none d-lg-block contact-bg">
             <div class="oval-black"></div>
         </div>
         
         <div class="row contact justify-content-center">
-            <div class="col-sm-11 col-md-12 px-4">
-                <div class="row">
-                    <div class="col-sm-10 col-md-5">
+            <div class="col-sm-12 px-4">
+                <div class="row justify-content-center">
+                    <div class="col-sm-5 col-md-5 col-lg-5">
                         <h4 class="text-bold">Nous contacter</h4>
                         <address>                       
                             <p> <img class="pr-3" src="./assets/img/location.svg" alt="">32 rue Pastourelle <br> 75003 Paris</p>                           
@@ -369,7 +369,7 @@
                             <a href = "mailto:contact@awb-energie.com"><img class="pr-3" src="./assets/img/mail.svg" alt="">contact@awb-energie.com</a>
                         </address>
                     </div>
-                    <div class="col-sm-10 col-md-7">
+                    <div class="col-sm-12 col-md-12 col-lg-7">
                         <h4 class="text-bold">Formulaire</h4>
                         <form>
                             <div class="form-group">
@@ -408,18 +408,17 @@
                 </div>               
             </div>
         </div>
-        <div class="d-none d-md-block contact-bg contact-bg-bottom">
+        <div class="d-none d-lg-block contact-bg contact-bg-bottom">
             <div class="oval-black"></div>
         </div>
     
     </section>
 
     <!-- FAQ section -->
-    <section>
+    <section id="section9">
         <h3 class="text-center text-bold">Questions fréquentes</h3>
         <div class="row faq justify-content-center"> 
-
-            <div class="col-sm-12 col-md-6">      
+            <div class="col-sm-12 col-md-5">      
                 <div class="panel-group">
                     <div class="panel panel-default">
                     <div class="panel-heading">
@@ -433,7 +432,7 @@
                     </div>
                 </div>  
             </div> 
-            <div class="col-sm-12 col-md-6">      
+            <div class="col-sm-12 col-md-5">      
                 <div class="panel-group">
                     <div class="panel panel-default">
                     <div class="panel-heading">
@@ -447,7 +446,7 @@
                     </div>
                 </div>  
                 </div>               
-            <div class="col-sm-12 col-md-6">      
+            <div class="col-sm-12 col-md-5">      
                 <div class="panel-group">
                     <div class="panel panel-default">
                     <div class="panel-heading">
@@ -461,7 +460,7 @@
                     </div>
                 </div>  
             </div>
-            <div class="col-sm-12 col-md-6">      
+            <div class="col-sm-12 col-md-5">      
                 <div class="panel-group">
                     <div class="panel panel-default">
                     <div class="panel-heading">
@@ -475,7 +474,7 @@
                     </div>
                 </div>  
                 </div>
-            <div class="col-sm-12 col-md-6">      
+            <div class="col-sm-12 col-md-5">      
                 <div class="panel-group">
                     <div class="panel panel-default">
                     <div class="panel-heading">
@@ -489,7 +488,7 @@
                     </div>
                 </div>  
             </div>
-            <div class="col-sm-12 col-md-6">      
+            <div class="col-sm-12 col-md-5">      
             <div class="panel-group">
                 <div class="panel-group">
                     <div class="panel panel-default">
@@ -509,6 +508,58 @@
 
     
     <!-- Footer -->
+    <footer id="footer">
+        <div class="row justify-content-center">
+            <div class="col-sm-6 col-md-2 mr-5">
+                <div class="logo">
+                    <a href="#">
+                        <img class="img-fluid" src="./assets/img/logo_awb.png" alt="">
+                    </a>
+                    <p>Des travaux d’économies d’énergie 100% financés pour votre logement</p>
+                </div>
+            </div>
+
+            <div class="d-none d-md-block col-md-3">
+                <div class="navigation">
+                    <h6>Navigation</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Accueil</a></li>
+                        <li><a href="#">Qui sommes-nous</a></li>
+                        <li><a href="#">Offres travaux</a></li>
+                        <li><a href="#">Nos engagements</a></li>
+                        <li><a href="#">Notre processus</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-sm-6 col-md-4">
+                <div class="navigation">
+                    <h6>Nous contacter</h6>
+                    <address>
+                        <p> <img class="pr-3" src="./assets/img/location.svg" alt="">32 rue Pastourelle 75003 Paris</p>                           
+                            <a href="tel:0183623939"><img class="pr-3" src="./assets/img/phone.svg" alt="">01 83 62 39 39</a>                            
+                            <a href = "mailto:contact@awb-energie.com"><img class="pr-3" src="./assets/img/mail.svg" alt="">contact@awb-energie.com</a>
+                    </address>
+                </div>
+            </div>
+
+            <div class="d-none d-md-block col-md-2">
+                <div class="navigation">
+                    <h6>Suivez-nous</h6>
+                    <p>Pour vous tenir au courant des toutes dernières actualités écologique.</p>
+                    <div class="social d-none d-lg-block grid">
+                        <img src="./assets/img/linkedin.png" alt="social media">
+                        <img src="./assets/img/facebook.png" alt="social media">
+                        <img src="./assets/img/twitter.png" alt="social media">
+                        <img src="./assets/img/whatsapp.png" alt="social media">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
 </div>
     
     <!-- Javascripts -->

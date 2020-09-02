@@ -1,7 +1,7 @@
 //add shadow on FAQ
-$('.panel-title').on('click', function(){
-    $(this).removeClass('faq-shadow');
-    $(this).addClass('no-hover');
+$('.panel-heading').on('click', function(){
+    $(this).children('.panel-title').toggleClass('faq-shadow');
+    $(this).children('.panel-title').toggleClass('no-hover');
 
-    $('.panel-default').addClass('faq-shadow');
+    $(this).closest('.panel-default').toggleClass('faq-shadow');
 });
