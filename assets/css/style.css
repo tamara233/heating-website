@@ -166,7 +166,7 @@ li{
    padding:  6rem 0 6rem 0;
 }
 section {
-    margin-bottom: 10rem;
+    margin-bottom: 9rem;
 }
 .container-fluid {
     padding: 0;
@@ -182,8 +182,8 @@ nav {
     font-family: 'Raleway';
     color: #000000 !important;
     font-size: 1rem;
-    line-height: 29px;
-    /* padding-right: 1.1rem!important; */
+    height: 3rem;
+    line-height: 3rem;
     text-align: center;
 }
 .navbar-nav .nav-link:hover {
@@ -312,6 +312,12 @@ select {
 }
 
 /* About section */
+.about .container {
+    padding: 0;
+}
+.about .container .row > div {
+    padding: 0;
+}
 .oval-blue {
     height: 80rem;
     background-color: var(--primary-blue);
@@ -323,16 +329,6 @@ select {
     position: absolute;
     margin: -40rem 0 0 1rem;
     height: 19rem;
-}
-.grey-oval {
-    height: 30em;
-    position: absolute;
-    background: rgba(44,46,48,0.15);
-    transform: rotate(90deg);
-    clip-path: ellipse(2% 50% at 8.5% 50%);
-    left: -32%;
-    position: absolute;
-    width: 100%;
 }
 .num {
     color: var(--secondary-green);
@@ -419,7 +415,7 @@ select {
 }
 .activity img:nth-child(3) {
     position: absolute;
-    margin: -41rem 0 0 18rem;
+    margin: -41rem 0 0 17rem;
     height: 20rem;
 }
 
@@ -668,14 +664,14 @@ address p img:first-child {
     padding: 4rem 0 5rem;
 }
 #footer .grid {
-    grid-template-columns: repeat(4, 3rem);
+    grid-template-columns: repeat(4, 2.5rem);
 }
 #footer h6 {
     font-size: 1.25rem;
     font-family: 'Gotham';
     min-height: 3rem;
 }
-#footer p:last-child {
+#footer .p-xs {
     text-align: center;
 }
 #footer p , footer ul {
@@ -725,6 +721,7 @@ address p img:first-child {
     .input-group-append {
         margin-top: -2rem;
     }
+    
     .contact {
         width: 80%;
     }
@@ -743,6 +740,17 @@ address p img:first-child {
     .phase-num {
         line-height: 8rem;
     }
+
  }
 
-@media (min-width: 1200px) { ... }
+@media (min-width: 1200px) { 
+    .activity img:nth-child(3) {
+        margin: -41rem 0 0 20rem;
+        height: 21rem;
+    }
+ }
+@media (min-width: 1650px) { 
+    nav {
+        margin-bottom: 2rem;
+    }
+}
