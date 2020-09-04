@@ -62,6 +62,7 @@
 }
 html {
     font-size: 65%;
+    scroll-behavior: smooth;
 }
 html, body {
     height: 100%;
@@ -93,6 +94,9 @@ h2 {
     padding-bottom: 6rem;
     padding-top: 1rem;
 }
+h1, h2, h3 {
+    font-weight: normal;
+}
 h3, h4, h5 {
     margin-bottom: 4.2rem;
 }
@@ -122,6 +126,9 @@ h6 {
 .text-extrabold {
     font-weight: 800;
 }
+.bold {
+    font-weight: bold;
+}
 .lead {
     font-size: 1.4rem;
     font-weight: 300;
@@ -132,7 +139,7 @@ li{
 }
 .btn {
     max-height: 63px;
-    width: 200px;
+    width: 15rem;
     border-radius: 30px;
     line-height: 29px;
     color: #FFFFFF;
@@ -176,22 +183,44 @@ section {
 }
 /* Navigation */
 nav {
-    padding: 1rem .2rem!important;
+    background-color: #FFFFFF;
+    padding: 1rem .2rem 2rem!important;
 }
 .navbar-nav .nav-link {
     font-family: 'Raleway';
     color: #000000 !important;
-    font-size: 1rem;
+    font-size: .8rem;
     height: 3rem;
     line-height: 3rem;
     text-align: center;
+    -webkit-transition: font-weight .2s ease;
+    -o-transition: font-weight .2s ease;
+    transition: font-weight .2s ease;
+}
+nav li:after {
+    content: '';
+    display: block;
+    margin: auto;
+    height: 1px;
+    width: 0px;
+    font-weight: bold;
+    background: transparent;
+    -webkit-transition: width .5s ease, background-color .5s ease ;
+    -o-transition: width .5s ease, background-color .5s ease ;
+    transition: width .5s ease, background-color .5s ease ;
 }
 .navbar-nav .nav-link:hover {
-    border-bottom: 1px solid #000000;
     font-weight: bold;
+} 
+nav li:hover:after {
+    width: 100%;
+    background: #000000;
 }
 .nav-item {
-    padding-right: .5rem;
+    padding-right: .4rem;
+}
+.navbar-nav .nav-link {
+    padding-left: 0!important;
 }
 .navbar-nav li a{
     padding: 0;
@@ -200,12 +229,15 @@ nav {
     align-items: center;
 }
 .navbar a {
-    font-size: 14px;
+    font-size: .8rem;
     font-weight: 500;
     letter-spacing: 0;
 }
+.navbar-nav > a {
+    width: 10rem;
+}
 .navbar-brand {
-    width: 25%;
+    width: 20rem!important;
 }
 
 .fa-phone {
@@ -346,6 +378,9 @@ select {
 .w-text {
     width: 100%;
 }
+.about h3 {
+    padding-top: 2rem;
+}
 
 /* Offers section */
 .offres-bg {
@@ -387,16 +422,17 @@ select {
     font-size: 1.25rem;
     padding: 0.5em 0;
 }
+
 .card-text:nth-child(3) {
-    margin-bottom: 4em;
+    margin-bottom: 6em;
 }
 .card a {
     position: absolute;
     bottom: 1em;
-    margin: auto;
-    left: calc(50% - 75px);
+    margin-bottom: 1.2rem;
+    left: calc(50% - 4.6875rem);
     width: auto;
-    padding: 1em 1.5rem;
+    padding: 1rem 1.5rem;
 }
 
 /* Activities section */
@@ -451,10 +487,6 @@ select {
 }
 .activity .card-text {
     margin-bottom: 0;
-}
-.activity a {
-    font-size: 18px;
-    width: 260px;
 }
 
 /* Process section */
@@ -546,6 +578,7 @@ select {
 
 .reviews .col-sm-6:last-child a {
     font-size: .78rem;
+    width: 12rem;
 }
 .reviews>div {
     margin-bottom: 1rem;
@@ -606,7 +639,8 @@ address p img:first-child {
     font-weight: 300;
 }
 .contact select {
-    padding-left: 20px;
+    padding-left: 1.25rem;
+    z-index: 1;
 }
 
 .contact form button {
@@ -656,6 +690,13 @@ address p img:first-child {
 }
 .no-hover {
     box-shadow: none!important;
+}
+.faq i {
+    color: var(--primary-blue);
+    font-size: 1.2rem;
+}
+.rotate-90 {
+    transform: rotate(90deg);
 }
 
 /* Footer */
@@ -714,6 +755,13 @@ address p img:first-child {
     html {
         font-size: 100%;
     }
+    .navbar-shadow {
+        position: sticky;
+        box-shadow: 0 .5rem 1rem .5rem rgba(0,0,0,.15);
+    }
+    .navbar-brand {
+        width: 12rem!important;
+    }
     .w-text {
         width: 55%;
         margin-left: 3%;
@@ -740,6 +788,9 @@ address p img:first-child {
     .phase-num {
         line-height: 8rem;
     }
+    .contact address p:first-child {
+        width: 13rem;
+    }
 
  }
 
@@ -748,9 +799,25 @@ address p img:first-child {
         margin: -41rem 0 0 20rem;
         height: 21rem;
     }
+    .navbar-brand {
+        width: 20rem!important;
+    }
+    .navbar-nav .nav-link {
+        font-size: 1rem;
+    }
+    .navbar > a {
+        width: 8rem;
+    }
+    .nav-item {
+        padding-right: .4rem;
+    }
+    .navbar-nav .nav-link {
+        padding-left: .5rem!important;
+    }
  }
 @media (min-width: 1650px) { 
     nav {
+        padding: 1rem .2rem 2rem!important;
         margin-bottom: 2rem;
     }
 }
