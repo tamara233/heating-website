@@ -98,10 +98,10 @@ h1, h2, h3 {
     font-weight: normal;
 }
 h3, h4, h5 {
-    margin-bottom: 4.2rem;
+    margin-bottom: 3rem;
 }
 h3 {
-    font-size: 2.5;
+    font-size: 2.5rem;
     line-height: 60px;
 }
 h4 {
@@ -345,7 +345,11 @@ select {
 
 /* About section */
 .about .container {
+    margin: auto;
     padding: 0;
+}
+.about .row div > p {
+    padding-bottom: 2rem;
 }
 .about .container .row > div {
     padding: 0;
@@ -769,7 +773,12 @@ address p img:first-child {
     .input-group-append {
         margin-top: -2rem;
     }
-    
+    .about {
+        margin-bottom: 0;
+    }
+    .about .container {
+        margin: 0;
+    }   
     .contact {
         width: 80%;
     }
