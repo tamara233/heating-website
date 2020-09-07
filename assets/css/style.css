@@ -804,9 +804,7 @@ address p img:first-child {
         left: 0;
         right: 0;
     }
-    .jumbotron h2 {
-        padding: 2rem 6rem;
-    }
+    
     .about {
         margin-bottom: 0;
     }
@@ -852,6 +850,9 @@ address p img:first-child {
     }
     .navbar-nav .nav-link {
         padding-left: .5rem!important;
+    }
+    .jumbotron h2 {
+        padding: 2rem 6rem;
     }
  }
 @media (min-width: 1650px) { 
