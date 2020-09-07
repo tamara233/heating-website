@@ -324,7 +324,7 @@ nav li:hover:after {
     line-height: 0.9rem;
     float: right;
     padding-right: 1rem;
-    /* margin-top: -2.5rem; */
+    margin-top: -2.1rem;
 }
 #application button {
     height: 48px;
@@ -635,7 +635,6 @@ address p img:first-child {
 }
 .contact .input-group-append {
     margin-left: 84%;
-    margin-top: -2rem;
 }
 .contact select, .contact textarea::placeholder {
     padding-top: 5px;
