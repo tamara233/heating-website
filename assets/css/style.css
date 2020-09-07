@@ -677,6 +677,10 @@ address p img:first-child {
     font-size: 1rem;
     margin-top: -2.1rem;
 }
+.success-message {
+    color: var(--secondary-green);
+    display: none;
+}
 /* FAQ section */
 .panel-title {
     border-radius: 5px;

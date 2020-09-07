@@ -21,27 +21,52 @@ if ($(window).width() > 992) {
     });
 }
 
-// $('form').on('submit', function(e){
-//     // validation code here
-   
-//       e.preventDefault();
-    
-//   });
-
-  window.addEventListener('load', function() {
-    var forms = document.getElementsByClassName('needs-validation');
+// Send Contact Form
+window.addEventListener('load', function() {
+    var form = document.getElementById('contactForm');
     var validateGroup = document.getElementsByClassName('to-validate');
 
-    var validation = Array.prototype.filter.call(forms, function(form) {
+
     form.addEventListener('submit', function(event) {
-    if (form.checkValidity() === false) {
     event.preventDefault();
-    event.stopPropagation();    
-    }
-    //Added validation class to all form-groups in need of validation
+    if (form.checkValidity() === false) {
+    event.stopPropagation(); 
     for (var i = 0; i < validateGroup.length; i++) {
         validateGroup[i].classList.add('was-validated');
     }   
+    } else {
+    
+
+    var url = $(this).attr('action'),
+        type = $(this).attr('method'),
+        data = {};
+
+        $(this).find('[name').each(function(index, value) {
+            var name = $(this).attr('name'),
+                value = $(this).val();
+
+            data[name] = value;
+        });
+
+        $.ajax({
+            url: url,
+            type: type,
+            contentType:"application/json",
+            dataType: "json",
+            data: JSON.stringify(data),
+            success: function(res) {
+                console.log(res)
+            },
+            error: function(xhr, resp, text) {
+                console.log(resp, text);
+            }
+            
+        });
+
+        $(form).each(function(){
+            this.reset();
+            $('.success-message').show();
+        });
+    }
     }, false);
-    });
     }, false);
