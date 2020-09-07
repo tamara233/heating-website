@@ -262,6 +262,9 @@ nav li:hover:after {
 .jumbotron h1 {
     padding-bottom: 1rem;
 }
+.jumbotron h2 {
+    padding: 0 6rem;
+}
 .jumbotron a {
     padding: .7rem 2.6rem;
     border: none;
@@ -289,8 +292,8 @@ nav li:hover:after {
     margin-top: 0.3rem;
 }
 .oval-green {
-    height: 40rem;
-    width: 40rem;
+    height: 34rem;
+    width: 28rem;
     background-color: var(--secondary-green);
     clip-path: circle(48.9% at 10% 50%);
     float: left;
@@ -796,6 +799,14 @@ address p img:first-child {
     .input-group-append {
         margin-top: -2rem;
     }
+    .jumbotron .container {
+        position: absolute;
+        left: 0;
+        right: 0;
+    }
+    .jumbotron h2 {
+        padding: 2rem 6rem;
+    }
     .about {
         margin-bottom: 0;
     }
@@ -823,17 +834,13 @@ address p img:first-child {
     .contact address p:first-child {
         width: 13rem;
     }
-
  }
 
 @media (min-width: 1200px) { 
     .activity img:nth-child(3) {
         margin: -41rem 0 0 20rem;
         height: 21rem;
-    }
-    .navbar-brand {
-        width: 20rem!important;
-    }
+    }    
     .navbar-nav .nav-link {
         font-size: 1rem;
     }
@@ -841,7 +848,7 @@ address p img:first-child {
         width: 8rem;
     }
     .nav-item {
-        padding-right: .4rem;
+        padding-right: 1.4rem;
     }
     .navbar-nav .nav-link {
         padding-left: .5rem!important;
