@@ -60,6 +60,7 @@
     font-family: 'Gotham';
     src: url("./fonts/Gotham/Gotham-Bold.ttf") format("truetype");
 }
+
 html {
     font-size: 65%;
     scroll-behavior: smooth;
@@ -254,7 +255,7 @@ nav li:hover:after {
     /* position: relative; */
 }
 .form-group input , .form-group select{
-    height: 48px;
+    height: 3rem;
 }
 
 /* Hero section */
@@ -323,7 +324,7 @@ nav li:hover:after {
     line-height: 0.9rem;
     float: right;
     padding-right: 1rem;
-    margin-top: -2.5rem;
+    /* margin-top: -2.5rem; */
 }
 #application button {
     height: 48px;
@@ -634,7 +635,7 @@ address p img:first-child {
 }
 .contact .input-group-append {
     margin-left: 84%;
-    top: 122px;
+    margin-top: -2rem;
 }
 .contact select, .contact textarea::placeholder {
     padding-top: 5px;
@@ -650,7 +651,30 @@ address p img:first-child {
 .contact form button {
     margin-top: 1.5em;
 }
-
+.form-group {
+    position: relative;
+}
+.was-validated textarea.form-control:invalid, textarea.form-control.is-invalid {
+    background-position: bottom calc(.375em + .1875rem) right calc(.375em + .1875rem);
+}
+.check-textarea {
+    position: absolute;
+    right: 0;
+    bottom: .5rem;
+}
+.form-control.is-invalid, .was-validated .form-control:valid {
+   background-image: none;
+   border-color: var(--secondary-green)
+}
+.valid-feedback {
+    color: var(--secondary-green);
+}
+.valid-feedback i {
+    float: right;
+    padding-right: .8rem;
+    font-size: 1rem;
+    margin-top: -2.1rem;
+}
 /* FAQ section */
 .panel-title {
     border-radius: 5px;

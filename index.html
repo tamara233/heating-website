@@ -369,7 +369,7 @@
                     </div>
                     <div class="col-sm-12 col-md-12 col-lg-7">
                         <h4 class="text-bold">Formulaire</h4>
-                        <form>
+                        <form id="myForm" class="needs-validation"  novalidate>
                             <div class="form-group">
                                 <select id="inputState" class="form-control">
                                   <option selected data-default>Sujet*</option>
@@ -382,24 +382,39 @@
                                 
                               </div>
                             <div class="form-row">
-                                <div class="form-group col-md-6">
-                                    <input type="text" class="form-control" id="firstname" placeholder="Nom">
+                                <div class="form-group col-md-6 to-validate">
+                                    <input type="text" class="form-control to-validate" id="firstname" placeholder="Nom" required>
+                                    <div class="valid-feedback">
+                                        <i class="fas fa-check-circle"></i>
+                                    </div>
                                 </div>
-                              <div class="form-group col-md-6">
-                                <input type="number" class="form-control" id="postcode" placeholder="Code postal">
-                              </div>      
+                            <div class="form-group col-md-6 to-validate">
+                                <input type="number" class="form-control " id="postcode" placeholder="Code postal" required>
+                                <div class="valid-feedback">
+                                    <i class="fas fa-check-circle"></i>
+                                </div>
+                            </div>      
                             </div>
                             <div class="form-row">
-                                <div class="form-group col-md-6">
-                                    <input type="email" class="form-control" id="email" placeholder="Email">
-                                  </div>  
-                                <div class="form-group col-md-6">
-                                    <input type="number" class="form-control" id="phone" placeholder="Téléphone">
+                                <div class="form-group col-md-6 to-validate">
+                                    <input type="email" class="form-control" id="email" placeholder="Email"  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required>
+                                    <div class="valid-feedback">
+                                        <i class="fas fa-check-circle"></i>
+                                    </div>
+                                </div>  
+                                <div class="form-group col-md-6 to-validate">
+                                    <input type="number" class="form-control" id="phone" placeholder="Téléphone" required>
+                                    <div class="valid-feedback">
+                                        <i class="fas fa-check-circle"></i>
+                                    </div>
                                 </div>                                 
                             </div>
-                            <div class="form-group">
-                                <textarea class="form-control" id="message" placeholder="Message" rows="5"></textarea>
-                              </div>
+                            <div class="form-group to-validate">
+                                <textarea class="form-control" id="message" placeholder="Message" rows="5" required></textarea>
+                                <div class="valid-feedback">
+                                    <i class="fas fa-check-circle check-textarea"></i>
+                                </div>
+                            </div>
                             <button type="submit" class="btn btn-green mx-auto d-block d-md-inline-block">Envoyer</button>
                           </form>
                     </div>
@@ -575,4 +590,4 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script src="./assets/js/custom.js"></script>
 </body>
-</html
+</html>
