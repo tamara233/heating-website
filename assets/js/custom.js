@@ -69,4 +69,13 @@ window.addEventListener('load', function() {
         });
     }
     }, false);
+
+    var formEval = document.getElementById('formEval');
+    formEval.addEventListener('submit', function(event) {
+        event.preventDefault();
+        $('#form-section').hide();
+        $('#eval-section').css('display', 'flex');
+
+        return false;
+    }, false)
     }, false);

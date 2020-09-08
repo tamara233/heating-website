@@ -71,39 +71,54 @@
     <!-- Form application-->
     <section id="application" id="section2">
         <div class="row justify-content-md-center">
-            <div class="col-sm-12 col-md-12">            
-                <h6 class="pt-4 d-block pb-3 pl-2 mx-4">Simuler ma performance énergétique</h6>
-                <form class="form d-lg-flex mx-4">
-                    <div class="form-group">
-                        <select class="form-control" id="exampleFormControlSelect1">
-                        <option>Type de bâtiment</option>
-                        <option>Type de bâtiment</option>
-                        <option>Type de bâtiment</option>
-                        <option>Type de bâtiment</option>
-                        <option>Type de bâtiment</option>
-                        </select>
-                        <div class="input-group-append">
-                            <span class="input-append-text caret"><</span>
+            <div class="col-sm-12 col-md-12"> 
+                <div id="form-section">         
+                    <h6 class="pt-4 d-block pb-3 pl-2 mx-4">Simuler ma performance énergétique</h6>
+                    <form id="formEval" class="form d-lg-flex mx-4">
+                        <div class="form-group">
+                            <select class="form-control" id="exampleFormControlSelect1">
+                            <option>Type de bâtiment</option>
+                            <option>Type de bâtiment</option>
+                            <option>Type de bâtiment</option>
+                            <option>Type de bâtiment</option>
+                            <option>Type de bâtiment</option>
+                            </select>
+                            <div class="input-group-append">
+                                <span class="input-append-text caret"><</span>
+                            </div>
                         </div>
-                    </div>
-                    <div class="form-group">
-                        <input type="text" class="form-control" id="postCode" placeholder="Code Postal">
-                    </div>
-                    <div class="form-group">
-                        <input type="text" class="form-control" id="postCode" placeholder="Surface totale">
-                        <div class="input-group-append">
-                            <span class="input-append-text">m2</span>
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="postCode" placeholder="Code Postal">
                         </div>
-                    </div>
-                    <div class="form-group">
-                        <input type="text" class="form-control" id="postCode" placeholder="Facture annuelle HT">
-                        <div class="input-group-append">
-                            <span class="input-append-text">€</span>
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="postCode" placeholder="Surface totale">
+                            <div class="input-group-append">
+                                <span class="input-append-text">m2</span>
+                            </div>
                         </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="postCode" placeholder="Facture annuelle HT">
+                            <div class="input-group-append">
+                                <span class="input-append-text">€</span>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-blue mx-auto d-block d-md-inline-block">Simuler</button>
+                    </form>
+                </div>
+                <div id="eval-section" class="justify-content-between align-items-center">
+                    <div class="square square-green">
+                        <p class="score">8 <span> /10</span></p>
                     </div>
-                    <button type="submit" class="btn btn-blue mx-auto d-block d-md-inline-block">Simuler</button>
-                </form>
-            </div>
+                    <div class="eval-text">
+                        <p>Votre performance énergétique est supérieur à la moyenne de votre secteur (note de 5/10 pour la moyenne). Bravo ! </p>
+                        <p>Testez-nous pour aller encore plus loin et prendre un temps d’avance sur l’optimisation énergétique de vos bâtiments. </p>
+                    </div>
+                    <div class="eval-link">
+                        <div class="btn btn-blue">Nous Contacter</div>
+                        <a href="#" class="eval-restart">Recommencer</a>
+                    </div>
+                </div>
+            </div>  
         </div>
     </section>
 

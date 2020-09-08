@@ -306,14 +306,62 @@ nav li:hover:after {
     background-color: rgba(238,238,238,0.42);
     min-height: 150px;
 }
-#application .btn {
+#application form .btn {
     line-height: calc(50% - 1.25rem);
 }
 #application .form-group .form-control {
     box-shadow: 0 5px 10px 0 rgba(0,0,0,0.1);
     width: 100%;
 }
-
+#eval-section {
+    padding: 1rem 0;
+    flex-direction: column;
+    display: none;
+}
+.eval-link {
+    text-align: center;
+}
+.eval-link .btn {
+    margin-bottom: .5rem;
+    text-decoration: none;
+}
+.eval-link a {
+    text-decoration: none;
+}
+.eval-restart {
+    color: var(--primary-blue);
+    font-weight: 500;
+    margin-top: 1rem;
+    display: block;
+}
+.square {
+    width: 13rem;
+    margin-bottom: 1.5rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+.square-green {
+    background: rgba(100,244,49,0.18);
+    color: #2F970B;
+}
+.square-yellow {
+    background: rgba(246,162,28,0.25);
+    color: #F6A21C;
+}
+.square-red {
+    background: rgba(249,95,99,0.3);
+    color: #F95F63;
+}
+.score {
+    font-weight: 600;
+    font-size: 5rem;
+    padding: 1rem 2.5rem;
+}
+.score span {
+    font-size: 1.75rem;
+    line-height: 6rem;
+    vertical-align: middle;
+}
 .input-append-text {
     display: -ms-flexbox;
     display: flex;
@@ -678,7 +726,8 @@ address p img:first-child {
     margin-top: -2.1rem;
 }
 .success-message {
-    color: var(--secondary-green);
+    color: var(--primary-blue);
+    margin: -1rem 0 1.5rem;
     display: none;
 }
 /* FAQ section */
@@ -783,6 +832,19 @@ address p img:first-child {
         width: 75%;
         margin-left: -3.5rem;
     }
+    #eval-section {
+        flex-direction: row;
+    }
+    .eval-text {
+        width: 41rem;
+        padding: 0 1rem;
+    }
+    .eval-link {
+        width: 20rem;
+    }
+    .square {
+        margin: 0;
+    }
  }
 
 @media (min-width: 992px) {
@@ -824,9 +886,13 @@ address p img:first-child {
     #application .form-group {
         margin-right: .5rem;
     }
-    #application .btn {
+    #application form .btn {
         width: 12%;
     }
+    .eval-text {
+        width: 54vw;
+    }
+    
     .process .btn {
         width: 25%!important;
     }
