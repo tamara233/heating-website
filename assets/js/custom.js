@@ -73,9 +73,14 @@ window.addEventListener('load', function() {
     var formEval = document.getElementById('formEval');
     formEval.addEventListener('submit', function(event) {
         event.preventDefault();
+        if (formEval.checkValidity() === false) {
+            event.stopPropagation(); 
+            $('.error-message').show();  
+        } else {        
         $('#form-section').hide();
         $('#eval-section').css('display', 'flex');
 
         return false;
+        }
     }, false)
     }, false);

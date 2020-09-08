@@ -74,9 +74,10 @@
             <div class="col-sm-12 col-md-12"> 
                 <div id="form-section">         
                     <h6 class="pt-4 d-block pb-3 pl-2 mx-4">Simuler ma performance énergétique</h6>
-                    <form id="formEval" class="form d-lg-flex mx-4">
+                    <div class="error-message pb-3 pl-2 mx-4">Veuillez remplir les champs ci-dessous</div>
+                    <form id="formEval" class="form d-lg-flex mx-4 needs-validation"  novalidate>
                         <div class="form-group">
-                            <select class="form-control" id="exampleFormControlSelect1">
+                            <select class="form-control" id="simul-select" required>
                             <option>Type de bâtiment</option>
                             <option>Type de bâtiment</option>
                             <option>Type de bâtiment</option>
@@ -88,16 +89,16 @@
                             </div>
                         </div>
                         <div class="form-group">
-                            <input type="text" class="form-control" id="postCode" placeholder="Code Postal">
+                            <input type="text" class="form-control" id="postCode" placeholder="Code Postal" required>
                         </div>
                         <div class="form-group">
-                            <input type="text" class="form-control" id="postCode" placeholder="Surface totale">
+                            <input type="text" class="form-control" id="postCode" placeholder="Surface totale" required>
                             <div class="input-group-append">
                                 <span class="input-append-text">m2</span>
                             </div>
                         </div>
                         <div class="form-group">
-                            <input type="text" class="form-control" id="postCode" placeholder="Facture annuelle HT">
+                            <input type="text" class="form-control" id="postCode" placeholder="Facture annuelle HT" required>
                             <div class="input-group-append">
                                 <span class="input-append-text">€</span>
                             </div>

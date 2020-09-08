@@ -362,6 +362,11 @@ nav li:hover:after {
     line-height: 6rem;
     vertical-align: middle;
 }
+.error-message {
+    color: #dc3545;
+    font-size: 1rem;
+    display: none;
+}
 .input-append-text {
     display: -ms-flexbox;
     display: flex;
