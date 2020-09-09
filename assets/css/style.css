@@ -759,7 +759,7 @@ address p img:first-child {
 .faq h4 {
     margin-bottom: .8rem;  
 }
-.faq .panel a, .faq h4 {
+.faq .panel a, .faq h4 , .faq h4 a > div {
     cursor: pointer;
 }
 .panel-body {
