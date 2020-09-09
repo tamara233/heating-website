@@ -757,7 +757,9 @@ address p img:first-child {
     padding: 1.4rem
 }
 .faq h4 {
-    margin-bottom: .8rem;
+    margin-bottom: .8rem;  
+}
+.faq .panel a, .faq h4 {
     cursor: pointer;
 }
 .panel-body {
