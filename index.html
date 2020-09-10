@@ -92,18 +92,18 @@
                             <input type="text" class="form-control" id="postCode" placeholder="Code Postal" required>
                         </div>
                         <div class="form-group">
-                            <input type="text" class="form-control" id="postCode" placeholder="Surface totale" required>
+                            <input type="text" class="form-control" id="surface" placeholder="Surface totale" required>
                             <div class="input-group-append">
                                 <span class="input-append-text">m2</span>
                             </div>
                         </div>
                         <div class="form-group">
-                            <input type="text" class="form-control" id="postCode" placeholder="Facture annuelle HT" required>
+                            <input type="text" class="form-control" id="facture" placeholder="Facture annuelle HT" required>
                             <div class="input-group-append">
                                 <span class="input-append-text">€</span>
                             </div>
                         </div>
-                        <button type="submit" class="btn btn-blue mx-auto d-block d-md-inline-block">Simuler</button>
+                        <button type="submit" class="btn btn-blue mx-auto d-block d-md-inline-block" onclick="calc()">Simuler</button>
                     </form>
                 </div>
                 <div id="eval-section" class="justify-content-between align-items-center">
@@ -111,8 +111,7 @@
                         <p class="score">8 <span> /10</span></p>
                     </div>
                     <div class="eval-text">
-                        <p>Votre performance énergétique est supérieur à la moyenne de votre secteur (note de 5/10 pour la moyenne). Bravo ! </p>
-                        <p>Testez-nous pour aller encore plus loin et prendre un temps d’avance sur l’optimisation énergétique de vos bâtiments. </p>
+                        <p></p>
                     </div>
                     <div class="eval-link">
                         <div class="btn btn-blue">Nous Contacter</div>
@@ -610,5 +609,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script src="./assets/js/custom.js"></script>
+    <script src="./assets/js/calculateur.js"></script>
 </body>
 </html>
