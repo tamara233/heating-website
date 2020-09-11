@@ -637,7 +637,7 @@ select {
     color: var(--secondary-green);
     font-size: 3.125rem;
     line-height: 7rem;
-    left: -2%;
+    left: -20%;
     position: absolute;
 }
 
@@ -804,18 +804,15 @@ address p img:first-child {
 .panel-body {
     color: rgba(44,46,48,0.9);
     font-size: 1rem;
-    padding: 1.5rem 1.5rem;
-    /* border-top: 1px solid #979797; */
+    padding: 0 .5rem 4rem;
     width: 87%;
+    min-height: 10rem;
     margin: auto;
     /* transition: border-top 0.1s ease; */
 }
 
 .panel-default {
     margin-bottom: 0.8rem;
-}
-.panel .show .panel-body {
-    border-top: 1px solid #979797;
 }
 .faq a{
     color: rgba(44,46,48,0.9);
@@ -972,7 +969,10 @@ address p img:first-child {
     .phase .fa-chevron-right {
         top: 2%;
     }
-
+    .phase > div::after {
+        position: absolute;
+        clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 71% 100%, 97% 50%, 71% 0);
+    }
     .phase-num {
         line-height: 8rem;
     }

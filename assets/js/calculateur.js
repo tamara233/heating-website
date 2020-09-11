@@ -55,8 +55,12 @@ function calc() {
     let m;
     const entry = msg.find(e => e[classType]);        
     entry ? m = entry[classType] : null
-    sum > 10 ? sum = 10 : null;
-    sum < 1 ? sum = 1 : null
+
+    // if (sum > 10 ) {
+    //     sum = 10
+    // } else if (sum < 1) {
+    //     sum = 1
+    // }
 
     document.querySelector(".square p").innerHTML = sum + '<span> /10 </span>'
     document.querySelector(".eval-text p").innerHTML = m
