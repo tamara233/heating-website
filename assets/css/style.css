@@ -14,11 +14,38 @@
 }
 
 @font-face {
-    font-family: 'Raleway';
-    src: url("./fonts/Raleway/Raleway-Regular.ttf") format("truetype");
+    font-family: 'Circular Air';
+    src: url("./fonts/CircularAir/circular-air-regular.ttf") format("truetype");
     font-weight: 400;
     font-style: normal;
 }
+@font-face {
+    font-family: 'Circular Air';
+    src: url("./fonts/CircularAir/Circular-Air-Light.ttf") format("truetype");
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Circular Air';
+    src: url("./fonts/CircularAir/Circular-Air-Medium.ttf") format("truetype");
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Circular Air';
+    src: url("./fonts/CircularAir/CircularAir-ExtraBlack.ttf") format("truetype");
+    font-weight: 900;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Circular Std';
+    src: url("./fonts/CircularStd/CircularStd-Bold.otf") format("opentype");
+    font-weight: 900;
+    font-style: normal;
+}
+
+
+
 
 @font-face {
     font-family: 'Poppins';
@@ -82,7 +109,7 @@ body {
     padding: 0;
     text-decoration: none;
     overflow-x: hidden;
-    font-family: 'Poppins';
+    font-family: 'Circular Air';
     color: #000;
 }
 .pt-7 {
@@ -122,19 +149,21 @@ h5 {
 }
 h6 {
     font-size: 1.5rem;
+    font-weight: 600;
 }
 .p-20 {
     font-size: 1.25rem;
 }
 
 .text-semibold {
-    font-weight: 600;
+    font-weight: 500;
 }
 .text-bold {
-    font-weight: 700;
+    font-family: "Circular Std";
+    font-weight: 600;
 }
 .text-extrabold {
-    font-weight: 800;
+    font-weight: 900;
 }
 .text-medium {
     font-weight: 500;
@@ -200,7 +229,8 @@ nav {
     padding: 1rem .2rem 2rem!important;
 }
 .navbar-nav .nav-link {
-    font-family: 'Raleway';
+    font-family: 'Circular Air';
+    font-weight: 300;
     color: #000000 !important;
     font-size: .8rem;
     height: 3rem;
@@ -441,8 +471,8 @@ select {
     font-weight: 800;
 }
 .desc {
+    font-family: 'Circular Air';
     font-size: 1.25rem;
-    font-weight: 500;
     line-height: 30px;
     margin-top: -.9rem;
   }
@@ -485,10 +515,7 @@ select {
     -o-transition: background-color 150ms linear, color 150ms linear;       
     transition: background-color 150ms linear, color 150ms linear;
 }
-.offers .card:hover {
-    background-color: var(--primary-blue);
-    color: #FFFFFF;
-}
+
 .offers .card .btn {
     background-color: #FFFFFF;
 }
@@ -500,6 +527,7 @@ select {
     line-height: 46px;
     min-height: 6.7rem;
     padding-top: 1rem;
+    color: var(--primary-blue);
 }
 .card-text {
     font-size: 1.25rem;
@@ -517,7 +545,14 @@ select {
     width: auto;
     padding: 1rem 1.5rem;
 }
-
+.offers .card:hover  {
+    background-color: var(--primary-blue);
+    color: #FFFFFF;
+}
+.offers .card:hover > .card-title {
+    
+    color: #FFFFFF;
+}
 /* Activities section */
 .activity .oval-blue {
     clip-path: circle(52% at 19% 50%);
@@ -536,10 +571,6 @@ select {
     position: absolute;
     margin: -41rem 0 0 17rem;
     height: 20rem;
-}
-
-.activity h6 {
-    font-weight: 600;
 }
 .activity .card {
     padding: 2rem 1rem 1rem;
@@ -833,7 +864,6 @@ address p img:first-child {
 }
 #footer h6 {
     font-size: 1.25rem;
-    font-family: 'Gotham';
     min-height: 3rem;
 }
 #footer .p-xs {

@@ -42,29 +42,31 @@ i = [
 
 
 function calc() {
-    let t = document.getElementById("simul-select").value;
+    const square = document.querySelector(".square")
+    const t = document.getElementById("simul-select").value;
     let s =  document.getElementById("surface").value;
     let f =  document.getElementById("facture").value;
-
     s = parseInt(s)
     f = parseInt(f)
 
-    let sum =  Math.round(((f / 90) * 1e3) / s)
-    let classType = sum >= 6 ? "green" : sum <= 4 ? "red" : "yellow";
+    const sum =  Math.round(((f / 90) * 1e3) / s)
+    const classType = sum >= 6 ? "green" : sum <= 4 ? "red" : "yellow";
 
     let m;
-    let entry = msg.find(e => e[classType]);        
+    const entry = msg.find(e => e[classType]);        
     entry ? m = entry[classType] : null
-    
+    sum > 10 ? sum = 10 : null;
+    sum < 1 ? sum = 1 : null
 
     document.querySelector(".square p").innerHTML = sum + '<span> /10 </span>'
     document.querySelector(".eval-text p").innerHTML = m
+    
     if (classType == "green") {
-        document.querySelector(".square").classList.add('square-green');
+        square.classList.add('square-green');
     } else if (classType == "yellow") {
-        document.querySelector(".square").classList.add('square-yellow');
+        square.classList.add('square-yellow');
     } else {
-        document.querySelector(".square").classList.add('square-red');
+        square.classList.add('square-red');
     }
     
 }
