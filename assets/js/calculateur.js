@@ -43,26 +43,35 @@ i = [
 
 function calc() {
     const square = document.querySelector(".square")
-    const t = document.getElementById("simul-select").value;
+    let t = document.getElementById("simul-select").value;
     let s =  document.getElementById("surface").value;
     let f =  document.getElementById("facture").value;
+    t = t.toLowerCase();
     s = parseInt(s)
     f = parseInt(f)
 
     const sum =  Math.round(((f / 90) * 1e3) / s)
-    const classType = sum >= 6 ? "green" : sum <= 4 ? "red" : "yellow";
+
+    let val , score;
+    for (let j = 0; j < n.length; j++) {
+        let current = n[j];
+        sum >= current.min && sum <= current.max && (val = j);
+
+        i.filter(obj => {
+            if (obj.type == t){
+                score = obj.values[val]
+                return score
+            }           
+        })
+    }
+
+    const classType = score >= 6 ? "green" : score <= 4 ? "red" : "yellow";
 
     let m;
     const entry = msg.find(e => e[classType]);        
     entry ? m = entry[classType] : null
-
-    // if (sum > 10 ) {
-    //     sum = 10
-    // } else if (sum < 1) {
-    //     sum = 1
-    // }
-
-    document.querySelector(".square p").innerHTML = sum + '<span> /10 </span>'
+   
+    document.querySelector(".square p").innerHTML = score + '<span> /10 </span>'
     document.querySelector(".eval-text p").innerHTML = m
     
     if (classType == "green") {

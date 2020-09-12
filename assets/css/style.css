@@ -378,7 +378,7 @@ nav li:hover:after {
     display: block;
 }
 .square {
-    width: 13rem;
+    width: 14rem;
     margin-bottom: 1.5rem;
     margin-left: auto;
     margin-right: auto;
@@ -908,7 +908,11 @@ address p img:first-child {
         padding: 0 1rem;
     }
     .eval-link {
-        width: 20rem;
+        width: 15rem;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        display: flex;
     }
     .square {
         margin: 0;
