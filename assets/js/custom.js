@@ -72,16 +72,23 @@ window.addEventListener('load', function() {
     }
     }, false);
 
+    // Evaluation form check
     var formEval = document.getElementById('formEval');
     formEval.addEventListener('submit', function(event) {
         event.preventDefault();
         if (formEval.checkValidity() === false) {
-            event.stopPropagation(); 
+            event.stopPropagation();
+               
             $('.error-message').show();  
         } else {        
         $('#form-section').hide();
         $('#eval-section').css('display', 'flex');
-
+        
+        $(".eval-restart").on("click", function () {
+            formEval.reset()
+            $('#eval-section').hide();
+            $('#form-section').show();
+        })
         return false;
         }
     }, false)

@@ -75,35 +75,35 @@
                     <h6 class="pt-4 d-block pb-3 pl-2 mx-4">Simuler ma performance énergétique</h6>
                     <div class="error-message pb-3 pl-2 mx-4">Veuillez remplir les champs ci-dessous</div>
                     <form id="formEval" class="form d-lg-flex mx-4 needs-validation"  novalidate>
-                        <div class="form-group">
+                        <div class="form-group to-validate">
                             <select class="form-control" id="simul-select" required>
-                            <option selected>Type de bâtiment</option>
-                            <option>Bureaux</option>
-                            <option>Mixte</option>
-                            <option>Enseignement</option>
-                            <option>Commerce</option>
-                            <option>Grandes-surfaces</option>
-                            <option>Logistique</option>
-                            <option>Sante</option>
-                            <option>Residentiel</option>
-                            <option>Restauration</option>
-                            <option>Site-industriel</option>
+                            <option value="" selected>Type de bâtiment*</option>
+                            <option value="Bureaux">Bureaux</option>
+                            <option value="Mixte">Mixte</option>
+                            <option value="Enseignement">Enseignement</option>
+                            <option value="Commerce">Commerce</option>
+                            <option value="Grandes-surfaces">Grandes-surfaces</option>
+                            <option value="Logistique">Logistique</option>
+                            <option value="Sante">Sante</option>
+                            <option value="Residentiel">Residentiel</option>
+                            <option value="Restauration">Restauration</option>
+                            <option value="Site-industriel">Site-industriel</option>
                             </select>
                             <div class="input-group-append">
                                 <span class="input-append-text caret"><</span>
                             </div>
                         </div>
                         <div class="form-group">
-                            <input type="text" class="form-control" id="postCode" placeholder="Code Postal" required>
+                            <input type="text" class="form-control" id="postCode" placeholder="Code Postal">
                         </div>
-                        <div class="form-group">
-                            <input type="text" class="form-control" id="surface" placeholder="Surface totale" required>
+                        <div class="form-group to-validate">
+                            <input type="number" min="0" oninput="validity.valid||(value='')" class="form-control" id="surface" placeholder="Surface totale*" required>
                             <div class="input-group-append">
                                 <span class="input-append-text">m2</span>
                             </div>
                         </div>
-                        <div class="form-group">
-                            <input type="text" class="form-control" id="facture" placeholder="Facture annuelle HT" required>
+                        <div class="form-group to-validate">
+                            <input type="number" min="0" oninput="validity.valid||(value='')" class="form-control" id="facture" placeholder="Facture annuelle HT*" required>
                             <div class="input-group-append">
                                 <span class="input-append-text">€</span>
                             </div>
@@ -403,7 +403,7 @@
                               </div>
                             <div class="form-row">
                                 <div class="form-group col-md-6 to-validate">
-                                    <input type="text" name="name" class="form-control to-validate" id="name" placeholder="Nom" required>
+                                    <input type="text" name="name" class="form-control" id="name" placeholder="Nom" required>
                                     <div class="valid-feedback">
                                         <i class="fas fa-check-circle"></i>
                                     </div>
