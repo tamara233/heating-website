@@ -101,9 +101,6 @@ html {
     font-size: 65%;
     scroll-behavior: smooth;
 }
-html, body {
-    height: 100%;
-} 
 body {
     margin: 0;
     padding: 0;
@@ -240,7 +237,7 @@ nav {
     font-family: 'Circular Air';
     font-weight: 300;
     color: #000000 !important;
-    font-size: .8rem;
+    font-size: 1.4rem;
     height: 3rem;
     line-height: 3rem;
     text-align: center;
@@ -268,7 +265,7 @@ nav li:hover:after {
     background: #000000;
 }
 .nav-item {
-    padding-right: .4rem;
+    padding-right: 1rem;
 }
 .navbar-nav .nav-link {
     padding-left: 0!important;
@@ -952,6 +949,9 @@ address p img:first-child {
     html {
         font-size: 100%;
     }
+    .navbar-nav .nav-link {
+        font-size: 1rem;
+    }
     .activity .btn, #contactForm .btn {
         margin-left: 0!important;
     }
@@ -1041,5 +1041,8 @@ address p img:first-child {
     nav {
         
         margin-bottom: 1rem;
+    }
+    .navbar-nav .nav-link {
+        font-size: 1.4rem;
     }
 }

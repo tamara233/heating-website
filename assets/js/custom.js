@@ -13,9 +13,11 @@ if ($(window).width() > 992) {
     $(window).scroll(function() {     
         var scroll = $(window).scrollTop();
         if (scroll > 0) {
+            console.log('aaa')
             $(".navbar").addClass("navbar-shadow");
         }
         else {
+            console.log('bbbb')
             $(".navbar").removeClass("navbar-shadow");
         }
     });
