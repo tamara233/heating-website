@@ -520,7 +520,7 @@ select {
     transition: background-color 150ms linear, color 150ms linear;
 }
 .offers .card-text {
-    padding: 0.5rem 2rem;
+    padding: 0.5rem 3.5rem;
 }
 .offers .card .btn {
     background-color: #FFFFFF;
