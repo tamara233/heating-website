@@ -1,10 +1,10 @@
 //add shadow on FAQ
 $('.panel-heading').on('click', function(){
-    $(this).children('.panel-title').toggleClass('faq-shadow');
+    // $(this).children('.panel-title').toggleClass('faq-shadow');
     $(this).children('.panel-title').toggleClass('no-hover');
     $(this).find(".chevron").toggleClass('rotate-90');
 
-    $(this).closest('.panel-default').toggleClass('faq-shadow');
+    // $(this).closest('.panel-default').toggleClass('faq-shadow');
 });
 
 //add box-shadow to the navbar

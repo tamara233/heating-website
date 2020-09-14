@@ -435,10 +435,43 @@ nav li:hover:after {
 .form-group input::placeholder {
     padding-left: .6rem;
   }
+#formEval *::-webkit-input-placeholder {
+    color: #000;
+    font-family: 'Circular Air';
+    font-size: 1rem;
+}
+#formEval *:-moz-placeholder {
+    color: #000;
+    font-family: 'Circular Air';
+    font-size: 1rem;
+}
+#formEval *::-moz-placeholder {
+    color: #000;
+    font-family: 'Circular Air';
+    font-size: 1rem;
+}
+#formEval *:-ms-input-placeholder {
+    color: #000;
+    font-family: 'Circular Air';
+    font-size: 1rem;
+}
+#formEval select  {
+    font-size: 1rem;
+    font-family: 'Circular Air';
+    color: #000;
+}
+optgroup {
+        font-size: 1rem;
+        font-family: 'Circular Air';
+        color: #000;
+}
 select {
     -webkit-appearance:none;
     -moz-appearance:none;
     appearance:none;
+    font-size: 1rem;
+    font-family: 'Circular Air';
+    color: #000;
 }
 .caret {
     transform: rotate(-90deg);
@@ -958,7 +991,7 @@ address p img:first-child {
     }
     .navbar-shadow {
         position: sticky;
-        box-shadow: 0px 0.1rem 1rem 0rem rgba(0,0,0,.15);
+        /* box-shadow: 0px 0.1rem 1rem 0rem rgba(0,0,0,.15); */
     }
     .navbar-brand {
         width: 12rem!important;
@@ -1008,10 +1041,10 @@ address p img:first-child {
         line-height: 8rem;
     }
     
-    }
     .contact address p:first-child {
         width: 13rem;
     }
+    
  }
 
 @media (min-width: 1200px) { 

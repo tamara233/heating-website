@@ -77,24 +77,26 @@
                     <form id="formEval" class="form d-lg-flex mx-4 needs-validation"  novalidate>
                         <div class="form-group to-validate">
                             <select class="form-control" id="simul-select" required>
-                            <option value="" selected>Type de bâtiment*</option>
-                            <option value="Bureaux">Bureaux</option>
-                            <option value="Mixte">Mixte</option>
-                            <option value="Enseignement">Enseignement</option>
-                            <option value="Commerce">Commerce</option>
-                            <option value="Grandes-surfaces">Grandes-surfaces</option>
-                            <option value="Logistique">Logistique</option>
-                            <option value="Sante">Sante</option>
-                            <option value="Residentiel">Residentiel</option>
-                            <option value="Restauration">Restauration</option>
-                            <option value="Site-industriel">Site-industriel</option>
+                            <optgroup>
+                                <option value="" selected>Type de bâtiment*</option>
+                                <option value="Bureaux">Bureaux</option>
+                                <option value="Mixte">Mixte</option>
+                                <option value="Enseignement">Enseignement</option>
+                                <option value="Commerce">Commerce</option>
+                                <option value="Grandes-surfaces">Grandes-surfaces</option>
+                                <option value="Logistique">Logistique</option>
+                                <option value="Sante">Sante</option>
+                                <option value="Residentiel">Residentiel</option>
+                                <option value="Restauration">Restauration</option>
+                                <option value="Site-industriel">Site-industriel</option>
+                            </optgroup>
                             </select>
                             <div class="input-group-append">
                                 <span class="input-append-text caret"><</span>
                             </div>
                         </div>
                         <div class="form-group">
-                            <input type="text" class="form-control" id="postCode" placeholder="Code Postal">
+                            <input type="text" class="form-control" id="postCode" placeholder="Code Postal" required>
                         </div>
                         <div class="form-group to-validate">
                             <input type="number" min="0" oninput="validity.valid||(value='')" class="form-control" id="surface" placeholder="Surface totale*" required>
@@ -119,7 +121,7 @@
                         <p></p>
                     </div>
                     <div class="eval-link">
-                        <div class="btn btn-blue">Nous Contacter</div>
+                        <a href="#contact" class="btn btn-blue">Nous Contacter</a>
                         <a href="#" class="eval-restart">Recommencer</a>
                     </div>
                 </div>
