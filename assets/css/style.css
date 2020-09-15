@@ -487,21 +487,21 @@ select {
 }
 .about .row div > p {
     padding-bottom: 2rem;
+    padding-right: 3rem;
 }
 .about .container .row > div {
     padding: 0;
 }
 .oval-blue {
-    height: 80rem;
     background-color: var(--primary-blue);
-    clip-path: circle(48.9% at 3% 50%);
+    clip-path: circle(48.9% at 30% 50%);
     position: relative;
-    margin-top: -9rem;
+    margin-top: -6rem;
 }
 .img-over {
     position: absolute;
-    margin: -40rem 0 0 1rem;
-    height: 19rem;
+    margin: -40rem 0 0 5rem;
+    height: 25rem;
 }
 .num {
     color: var(--secondary-green);
@@ -1039,10 +1039,17 @@ address p img:first-child {
     }
     .phase-num {
         line-height: 8rem;
-    }
-    
+    }   
     .contact address p:first-child {
         width: 13rem;
+    }
+    .oval-blue {
+        height: 65rem;
+        clip-path: circle(48.9% at 12% 50%);
+    }
+    .img-over {
+        height: 20rem;
+        margin: -32rem 0 0 -3rem;
     }
     
  }
@@ -1070,6 +1077,7 @@ address p img:first-child {
     .jumbotron h2 {
         padding: 2rem 6rem;
     }
+    
  }
 @media (min-width: 1650px) { 
     nav {
@@ -1078,5 +1086,13 @@ address p img:first-child {
     }
     .navbar-nav .nav-link {
         font-size: 1.4rem;
+    }
+    .oval-blue {
+        height: 60rem;
+        clip-path: circle(48.9% at 30% 50%);
+    }
+    .img-over {
+        height: 30rem;
+        margin: -39rem 0 0 2rem;
     }
 }
