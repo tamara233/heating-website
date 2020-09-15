@@ -77,8 +77,7 @@ window.addEventListener('load', function() {
     formEval.addEventListener('submit', function(event) {
         event.preventDefault();
         if (formEval.checkValidity() === false) {
-            event.stopPropagation();
-               
+            event.stopPropagation();             
             $('.error-message').show();  
         } else {        
         $('#form-section').hide();
