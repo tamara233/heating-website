@@ -379,10 +379,11 @@ nav li:hover:after {
     text-decoration: none;
 }
 .eval-restart {
-    color: var(--primary-blue);
+    color: var(--primary-blue)!important;
     font-weight: 500;
     margin-top: 1rem;
     display: block;
+    cursor: pointer;
 }
 .square {
     width: 14rem;
