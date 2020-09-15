@@ -232,9 +232,6 @@ section {
 nav {
     background-color: #FFFFFF;
     padding: 1rem .2rem!important;
-    width: 98%;
-    margin-left: auto;
-    margin-right: auto;
 }
 .navbar-nav .nav-link {
     font-family: 'Circular Air';
@@ -267,6 +264,9 @@ nav li:hover:after {
     width: 100%;
     background: #000000;
 }
+.navbar-nav {
+    margin-right: 1.5rem;
+}
 .nav-item {
     padding-right: 1rem;
 }
@@ -289,6 +289,7 @@ nav li:hover:after {
 }
 .navbar-brand {
     width: 20rem!important;
+    margin-left: 1.5rem;
 }
 
 .fa-phone {
