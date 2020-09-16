@@ -1,10 +1,10 @@
 //add shadow on FAQ
 $('.panel-heading').on('click', function(){
-    // $(this).children('.panel-title').toggleClass('faq-shadow');
+    $(this).children('.panel-title').toggleClass('faq-shadow');
     $(this).children('.panel-title').toggleClass('no-hover');
     $(this).find(".chevron").toggleClass('rotate-90');
 
-    // $(this).closest('.panel-default').toggleClass('faq-shadow');
+     $(this).closest('.panel-default').toggleClass('faq-shadow');
 });
 
 //add box-shadow to the navbar
@@ -13,11 +13,9 @@ if ($(window).width() > 992) {
     $(window).scroll(function() {     
         var scroll = $(window).scrollTop();
         if (scroll > 0) {
-            console.log('aaa')
             $(".navbar").addClass("navbar-shadow");
         }
         else {
-            console.log('bbbb')
             $(".navbar").removeClass("navbar-shadow");
         }
     });
@@ -28,7 +26,6 @@ window.addEventListener('load', function() {
     var form = document.getElementById('contactForm');
     var validateGroup = document.getElementsByClassName('to-validate');
 
-
     form.addEventListener('submit', function(event) {
     event.preventDefault();
     if (form.checkValidity() === false) {
@@ -36,9 +33,7 @@ window.addEventListener('load', function() {
     for (var i = 0; i < validateGroup.length; i++) {
         validateGroup[i].classList.add('was-validated');
     }   
-    } else {
-    
-
+    } else {  
     var url = $(this).attr('action'),
         type = $(this).attr('method'),
         data = {};
@@ -73,22 +68,22 @@ window.addEventListener('load', function() {
     }, false);
 
     // Evaluation form check
-    var formEval = document.getElementById('formEval');
-    formEval.addEventListener('submit', function(event) {
-        event.preventDefault();
-        if (formEval.checkValidity() === false) {
-            event.stopPropagation();             
-            $('.error-message').show();  
-        } else {        
-        $('#form-section').hide();
-        $('#eval-section').css('display', 'flex');
+    // var formEval = document.getElementById('formEval');
+    // formEval.addEventListener('submit', function(event) {
+    //     event.preventDefault();
+    //     if (formEval.checkValidity() === false) {
+    //         event.stopPropagation();             
+    //         $('.error-message').show();  
+    //     } else {        
+    //     $('#form-section').hide();
+    //     $('#eval-section').css('display', 'flex');
         
-        $(".eval-restart").on("click", function () {
-            formEval.reset()
-            $('#eval-section').hide();
-            $('#form-section').show();
-        })
-        return false;
-        }
-    }, false)
-    }, false);
+    //     $(".eval-restart").on("click", function () {
+    //         formEval.reset()
+    //         $('#eval-section').hide();
+    //         $('#form-section').show();
+    //     })
+    //     return false;
+    //     }
+     //}, false)
+ }, false);
